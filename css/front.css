@@ -1,0 +1,145 @@
+:root{
+	--colorPrincipal: #ffad1f;
+}
+
+.bloqueTimeline .content{
+	background: #f0f0f0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px #bdb9b9;
+    position: relative;
+}
+	.bloqueTimeline .infoR{ 
+		width: 100%;
+		display: flex;
+    	justify-content: flex-start;
+   	 	align-items: flex-start;
+   	 	flex-wrap: wrap;
+	 }
+		.bloqueTimeline .infoR img{width:100%}
+		.bloqueTimeline .infoR .text{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.bloqueTimeline .infoR .text h3{ padding: 0; margin: 0; color: var(--colorPrincipal);  }
+		.bloqueTimeline .infoR .text .desc{
+			font-size: 0.75rem;
+		    line-height: 1.2rem;
+		    font-family: sans-serif;
+		    margin-top: 10px;
+		    margin-bottom: 20px;
+		    width: 100%;
+		}
+		.bloqueTimeline .infoR .text .info{
+			font-size: 1rem;
+			color: var(--colorPrincipal);
+			font-weight: bold;
+			font-family: sans-serif;
+			width: 40%;
+		}	
+		.bloqueTimeline .infoR .text  .info-autor{
+			color: #aaa;
+			font-size: 0.7rem;
+			line-height: 1.5rem;
+			font-family: sans-serif;
+			font-style: italic;	
+			text-align: right;
+			width: 60%;	}
+.bloqueTimeline .infoV {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 4;
+	    text-align: center;
+	    font-size: 3rem;
+	    color: var(--colorPrincipal);
+	    justify-content: center;
+	    align-items: center;
+	    display: none;
+	    flex-wrap: wrap;
+	}
+
+	
+		.bloqueTimeline .infoV .icono{
+	
+		    border-radius: 50%;
+		    height: 115px;
+		    width: 112px;
+
+		}
+		.bloqueTimeline .infoV .num{
+			display: block;
+		    width: 100%;
+		    text-align: center;
+		    color: #4c4c4c;
+		    font-family: sans-serif;
+		    font-size: 1rem;
+    		line-height: 0.8rem;
+		    font-weight: 900;
+		    margin-top: 30px;
+		}
+
+.bloqueTimeline .timeline{
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: space-around;
+  	margin-bottom: 45px;
+}
+.bloqueTimeline .timeline>.dateBox{ position: relative; }
+.bloqueTimeline .timeline>.dateBox:after{
+	content: "";
+	display: block;
+	width: 4px;
+	height: 82%;
+	position: absolute;
+ 	background: var(--colorPrincipal);
+    bottom:-2rem;
+    left: 50%;
+}
+
+.bloqueTimeline .timeline:last-child>.text:after,
+.bloqueTimeline .timeline:last-child>.text:after{ display: none; }
+
+	.bloqueTimeline .timeline .date, .bloqueTimeline .timeline .infoV{
+		width: 5rem;
+		height: 5rem;
+		border-radius: 5rem;
+		text-align: center;
+		padding-top: 15px;
+		font-family: sans-serif;
+		background: var(--colorPrincipal);
+		position: relative;
+	}
+		.bloqueTimeline .timeline .date{ color: #fff;}
+		.bloqueTimeline .timeline .date .dia{
+			font-size: 1.8rem;
+		    line-height: 1.2rem;
+		    font-weight: 900;
+		}
+		.bloqueTimeline .timeline .date .mes{line-height: 1.5rem; font-size: 0.8rem;}
+		.bloqueTimeline .timeline .date .anio{line-height: 0.8rem; }
+.bloqueTimeline .timeline .text{
+	position: relative;
+	width: 77%;
+    padding:0 15px ;
+    background: #fff;
+    border: 1px solid #d4d3d3;
+    border-radius: 6px;
+    box-shadow: 2px 2px #ccc;
+}
+
+.timeline.infoV-80 .infoV { background: linear-gradient(to bottom, #fff 0%,#fff 20%,rgba(237,153,25,1) 20%,rgba(237,153,25,1) 50%,rgba(237,153,25,1) 100%); }
+.timeline.infoV-60 .infoV{ background: linear-gradient(to bottom, #fff 0%,#fff 40%,rgba(237,153,25,1) 40%,rgba(237,153,25,1) 50%,rgba(237,153,25,1) 100%); }
+.timeline.infoV-40 .infoV{ background: linear-gradient(to bottom, #fff 0%,#fff 60%,rgba(237,153,25,1) 60%,rgba(237,153,25,1) 50%,rgba(237,153,25,1) 100%); }
+.timeline.infoV-20 .infoV{ background: linear-gradient(to bottom, #fff 0%,#fff 80%,rgba(237,153,25,1) 80%,rgba(237,153,25,1) 50%,rgba(237,153,25,1) 100%); }
+.timeline.infoV-100 .infoV{ background: linear-gradient(to bottom, rgba(237,153,25,1) 100%,rgba(237,153,25,1) 50%,rgba(237,153,25,1) 100%, #fff 0%, #fff 100%); }
+
+
